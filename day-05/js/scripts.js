@@ -1,3 +1,24 @@
+//DAILY CHALLENGE
+// Write a function that accepts a number as an argument
+// Alert the user whether the given number is even or odd
+// Call your function
+
+function evenOrOdd(a){
+    if(a % 2 === 1){
+        console.log(`number ${a} is odd`);
+    }else if (a % 2 === 0){
+        console.log(`number ${a} is even`);
+    }else{
+        console.log(`seems like ${a} is not a number`);
+    }
+}
+
+evenOrOdd(0);
+evenOrOdd(7);
+evenOrOdd(8);
+evenOrOdd('string time');
+
+
 //TAKE HOME
 // Validate the password using the following rules:
 // Must be 6-20 characters long
@@ -26,8 +47,6 @@ function password(pass){
     }
 
 };
-
-
 
 let pw= "a7";
 password(pw);
