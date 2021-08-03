@@ -55,3 +55,6 @@ fetch(base_url1 + endpoint1) //fetch('https://cat-fact.herokuapp.com/facts')
 // Make a request to this Cat Facts API
 // Get a random cat fact
 // Display the cat fact in an alert
+
+fetch('https://cat-fact.herokuapp.com/facts')
+        .then(res => console.log("facts: ", res))

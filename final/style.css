@@ -1,0 +1,110 @@
+body{
+        font-family: 'Montserrat', sans-serif;
+
+    background-color: black;
+    background-image: url(./img/bg-stars.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(218, 165, 218);
+    font-family: 'Rye', cursive;
+    font-weight: normal;
+    font-size: 56pt;
+    text-shadow: 5px 5px #250229;
+}
+
+h2{
+    color: rgb(218, 165, 218);
+    text-shadow: 3px 3px #250229;
+    font-family: 'Rye', cursive;
+    font-weight: normal;
+    font-size: 24pt;
+    letter-spacing: 2px;
+}
+
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball-box{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    filter: brightness(1.8);
+
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.form-box{
+    height: 60px;
+    font-display: flex;
+    align-items: center;
+}
+
+.invite-text{
+    text-align: center;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+    width: 375px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 6px;
+}
+input[type=button]{
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    font-weight: bold;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: white;
+}
+
+.color-change{
+    
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%   {top: 0px;}
+  50%  {top: -10px}
+  100% {top: 0px;}
+}
+
+@keyframes color-change {
+  0%   {color: rgb(218, 165, 218);}
+  20%  {color: rgb(216, 156, 77);}
+  100% {color: rgb(218, 165, 218);}
+}
+
